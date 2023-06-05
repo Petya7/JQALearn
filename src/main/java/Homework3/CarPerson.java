@@ -1,6 +1,6 @@
 package Homework3;
 
-public class carPerson {
+public class CarPerson {
     public static void main(String[] args) {
         Car sportsCar = new Car();
         sportsCar.year = 2023;
@@ -19,7 +19,7 @@ public class carPerson {
         familyCar.isSportCar = false;
 
         sportsCar.useFuel(35);
-        familyCar.changeЕngineFuelOperationSystem("Changed System");
+        familyCar.changeЕngineFuelOperationSystem("System for family car");
 
         System.out.println("Fields for sports car: ");
         System.out.println("Year: " + sportsCar.year);
