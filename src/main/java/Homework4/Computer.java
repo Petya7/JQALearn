@@ -11,6 +11,9 @@ public class Computer {
         this.operationSystem = operationSystem;
     }
 
+    public Computer() {
+    }
+
     int comparePrice(Computer compare) {
         if(this.price > compare.price) {
             return -1;
@@ -19,12 +22,5 @@ public class Computer {
         } else {
             return 0;
         }
-    }
-}
-
-    class ComputerPrices {
-    public static void main(String[] args) {
-        Computer comp1 = new Computer(2023,5000.00, "Windows");
-        Computer comp2 = new Computer(2022, 4000.00, "Linux");
     }
 }
