@@ -1,0 +1,19 @@
+package Homework6;
+
+public class Bird extends Animal implements IAnimal {
+  public void fly() {
+      System.out.println("The bird is flying");
+  }
+  public void sing() {
+      System.out.println("The bird is singing");
+  }
+    @Override
+    void play() {
+        System.out.println("The bird is playing");
+    }
+
+    @Override
+    public void makeSomeNoise() {
+        System.out.println("The bird is making noises like chik chirik");
+    }
+}
