@@ -2,11 +2,14 @@ package Homework6;
 
 public class AnimalDemo {
 
+
+
     public static void main(String[] args) {
     Bird bird = new Bird();
     bird.fly();
     bird.play();
     bird.sing();
+    bird.sing("Song 1");
     bird.makeSomeNoise();
     System.out.println("--------------------");
 
