@@ -9,7 +9,7 @@ public class Bird extends Animal implements IAnimal {
       System.out.println("The bird is singing");
   }
     public void sing(String song) {
-        System.out.println("The bird is singing a song for bird1");
+        System.out.println("The bird is singing " + song);
     }
     @Override
     void play() {
