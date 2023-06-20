@@ -10,5 +10,8 @@ public class Main {
         employee.showEmployeeInfo();
         employee.overtime(2);
 
+        Person person = new Person("Az", 31,false);
+        person.showPersonInfo();
+
     }
 }
