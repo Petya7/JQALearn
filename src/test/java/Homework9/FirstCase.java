@@ -1,22 +1,10 @@
 package Homework9;
 
 import junit.framework.Assert;
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.chrome.ChromeDriver;
 
-
-public class FirstCase {
-    private static ChromeDriver driver;
-
-    @BeforeClass
-    public static void openBrowser() {
-        System.setProperty("webdriver.chrome.driver", "D:\\Selenium jars and drivers\\Drivers\\Chrome drivers\\chromedriver.exe");
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-    }
+public class FirstCase extends BeforeAfter {
 
     @Test
     public void findUsername() {
@@ -26,10 +14,5 @@ public class FirstCase {
         String actual = "https://demoqa.com/text-box";
         Assert.assertEquals(expected, actual);
         System.out.println("The assertion passed");
-    }
-
-    @AfterClass
-        public static void closeBrowser() {
-        driver.close();
     }
 }

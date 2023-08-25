@@ -1,21 +1,11 @@
 package Homework9;
 
 import junit.framework.Assert;
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.chrome.ChromeDriver;
 
-public class SecondCase {
-    private static ChromeDriver driver;
+public class SecondCase extends BeforeAfter {
 
-    @BeforeClass
-    public static void openBrowser() {
-        System.setProperty("webdriver.chrome.driver", "D:\\Selenium jars and drivers\\Drivers\\Chrome drivers\\chromedriver.exe");
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-    }
     @Test
     public void findUsernameAndPassword() {
         driver.get("https://www.saucedemo.com");
@@ -30,8 +20,4 @@ public class SecondCase {
         Assert.assertEquals(expectedPassword,actualPassword);
         System.out.println("Assertions passed");
     }
-    @AfterClass
-    public static void closeBrowser() {
-        driver.close();
-    }
-}
+  }
