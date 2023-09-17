@@ -9,6 +9,7 @@ import java.util.concurrent.TimeUnit;
 public class BeforeAfter extends BrowserFactory {
 
     public static ChromeDriver driver;
+    String test;
 
 
     @BeforeClass
@@ -23,3 +24,4 @@ public class BeforeAfter extends BrowserFactory {
         closeAllDriver();
     }
 }
+
