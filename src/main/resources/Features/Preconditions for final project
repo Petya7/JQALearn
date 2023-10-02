@@ -1,3 +1,4 @@
+Feature: Swag Labs Login and Purchase
 Scenario: Go trough login and purchase process
 Given User launches Chrome browser
 When User opens URL "https://www.saucedemo.com/"
