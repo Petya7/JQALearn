@@ -26,4 +26,4 @@ Then User can see Thank you message
 
 When User clicks on Back home button
 Then User can see the home page
-And Close browser
+And Close browserr
